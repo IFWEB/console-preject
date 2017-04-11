@@ -1,6 +1,7 @@
 var path = require('path');
 var config = require('../config');
 // var vueLoaderConfig = require('./vue-loader.conf');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 function resolve(dir) {
@@ -9,7 +10,7 @@ function resolve(dir) {
 
 module.exports = {
     entry: {
-        app: './src/router/app.js',
+        app: './src/app.js',
         vendor: ['vue', 'vue-router', 'jQuery']
     },
     output: {
@@ -27,6 +28,7 @@ module.exports = {
     },
     module: {
         rules: [
+            // es语法规则校验插件
             // {
             //     test: /\.(js|vue)$/,
             //     loader: 'eslint-loader',
@@ -39,12 +41,21 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
+            }, {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader'
+                })
             }
+            // es6语法翻译插件，暂时不用
             // , {
             //     test: /\.js$/,
             //     loader: 'babel-loader',
             //     include: [resolve('src'), resolve('test')]
             // }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('styles.css')
+    ]
 }
