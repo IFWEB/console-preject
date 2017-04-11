@@ -10,7 +10,7 @@ function resolve(dir) {
 module.exports = {
     entry: {
         app: './src/router/app.js',
-        vendor: ['vue', 'vue-router','jQuery']
+        vendor: ['vue', 'vue-router', 'jQuery']
     },
     output: {
         path: config.build.assetsRoot,
@@ -20,7 +20,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.vue', '.json'],
         alias: {
-            'vue$': 'vue/dist/vue.esm.js',
+            'vue': 'vue/dist/vue.js',
             '@': resolve('src'),
             // '$': resolve('src/static/jquery.min.js')
         }
