@@ -46,6 +46,20 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     use: 'css-loader'
                 })
+            }, {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['es2015', {
+                                modules: false
+                            }]
+                        ],
+                        plugins: ['syntax-dynamic-import']
+                    }
+                }]
             }
             // es6语法翻译插件，暂时不用
             // , {

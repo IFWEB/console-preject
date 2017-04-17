@@ -1,0 +1,202 @@
+[{
+    "path": "",
+    "title": "首页",
+    "component": "./pages/index/default/side_bar.vue",
+    "children": [{
+        "path": "",
+        "title": "首页",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "user",
+    "title": "用户管理",
+    "component": "./pages/index/default/side_bar.vue",
+    "children": [{
+        "group": "userMan",
+        "title": "账号管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "business",
+    "title": "业务管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "业务管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "advertise",
+    "title": "宣传管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "宣传管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "system",
+    "title": "系统管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "系统管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "finance",
+    "title": "财务管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "财务管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "statistics",
+    "title": "统计管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "统计管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "promote",
+    "title": "推广管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "推广管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}, {
+    "path": "baseInfo",
+    "title": "基础信息管理",
+    "component": "./pages/index/default/main",
+    "children": [{
+        "group": "userMan",
+        "title": "基础信息管理"
+    }, {
+        "path": "",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "2",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "3",
+        "title": "账号管理",
+        "component": "./pages/index/default/main.vue"
+    }, {
+        "path": "4",
+        "title": "E账户管理",
+        "component": "./pages/index/default/main.vue"
+    }]
+}]

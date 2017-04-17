@@ -13,15 +13,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li :class='checkActive("default")'><router-link to="/home/default">首页</router-link></li>
-            <li :class='checkActive("user")'><router-link to="/home/user">用户管理</router-link></li>
-            <li :class='checkActive("business")'><router-link to="/home/business">业务管理</router-link></li>
-            <li :class='checkActive("advertise")'><router-link to="/home/advertise">宣传管理</router-link></li>
-            <li :class='checkActive("system")'><router-link to="/home/system">系统管理</router-link></li>
-            <li :class='checkActive("finance")'><router-link to="/home/finance">财务管理</router-link></li>
-            <li :class='checkActive("statistics")'><router-link to="/home/statistics">统计管理</router-link></li>
-            <li :class='checkActive("promote")'><router-link to="/home/promote">推广管理</router-link></li>
-            <li :class='checkActive("baseInfo")'><router-link to="/home/baseInfo">基础信息管理</router-link></li>
+            <li v-for='item in navList' :class='checkActive(item.path,item)'><router-link :to="item.pathStr">{{item.title}}</router-link></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><router-link to="/login">退出登录</router-link></li>
@@ -33,16 +25,51 @@
 
 <script>
 module.exports = {
+  props:['rList'],
   data: function() {
+    var allData=this.getPath();
     return {
-      id: this.$route.params.id
+      path: allData.path,
+      navList:this.rList
+    };
+  },
+  watch:{
+    '$route':function (to, from) {
+      var allData=this.getPath();
+      this.path=allData.path;
+      this.sideBar=allData.children;
     }
   },
   methods:{
-    focusOn:function(){
+    getPath:function(){
+      var allPath = this.$route.path.match(/^\/([\w]*)(\/|$)/),
+          _id=allPath?allPath[1]:'',
+          list=this.rList,
+          result=null;
+      for (var i = 0,len=list.length; i < len; i++) {
+        var item =list[i];
+        item.pathStr='/'+(item.path||'');
+        if(item.path===_id){
+          result= item;
+        }
+      }
+      /*{
+          "path": "user",
+          "pathStr": "/user",
+          "component": "./pages/index/default/side_bar.vue",
+          "children": [{
+              "path": "",
+              "component": "./pages/index/default/main.vue"
+          }, {
+              "path": "2",
+              "component": "./pages/index/default/main.vue"
+          }]
+      }*/
+      this.$emit('showSide',result.children);
+      return result;
     },
-    checkActive:function(id){
-      return {active:this.$route.params.id===id};
+    checkActive:function(id,opt){
+      return {active:this.path===id};
     }
   }
 }

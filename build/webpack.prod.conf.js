@@ -3,9 +3,9 @@ var webpack = require('webpack');
 var config = require('../config');
 var merge = require('webpack-merge');
 var baseWebpackConfig = require('./webpack.base.conf');
-// var CopyWebpackPlugin = require('copy-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-// var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 // var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 
 var env = process.env.NODE_ENV === 'testing' ?
@@ -16,7 +16,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     output: {
         path: config.build.assetsRoot,
         filename: 'js/[name].[chunkhash].js',
-        publicPath: config.build.assetsRoot, // 设置require.ensure路径
+        publicPath: '/', //config.build.assetsRoot, // 设置require.ensure路径
         chunkFilename: 'js/[name].[chunkhash].js' // 设置require.ensure 文件名
     },
     plugins: [
@@ -30,9 +30,9 @@ var webpackConfig = merge(baseWebpackConfig, {
             },
             sourceMap: true
         }),
-        extract css into its own file
+        // extract css into its own file
         new ExtractTextPlugin({
-            filename: utils.assetsPath('css/[name].[contenthash].css')
+            filename: 'css/[name].[contenthash].css'
         }),
         // // Compress extracted CSS. We are using this plugin so that possible
         // // duplicated CSS from different components can be deduped.
@@ -46,7 +46,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         // see https://github.com/ampedandwired/html-webpack-plugin
         new HtmlWebpackPlugin({
             filename: process.env.NODE_ENV === 'testing' ? 'index.html' : config.build.index,
-            template: 'index.html',
+            template: './src/index.html',
             inject: true,
             minify: {
                 removeComments: true,
@@ -77,13 +77,13 @@ var webpackConfig = merge(baseWebpackConfig, {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'manifest',
             chunks: ['vendor']
-        })
+        }),
         // // copy custom static assets
-        // new CopyWebpackPlugin([{
-        //     from: path.resolve(__dirname, '../static'),
-        //     to: config.build.assetsSubDirectory,
-        //     ignore: ['.*']
-        // }])
+        new CopyWebpackPlugin([{
+            from: path.resolve(__dirname, '../src/static'),
+            to: config.build.assetsSubDirectory,
+            ignore: ['.*']
+        }])
     ]
 });
 
