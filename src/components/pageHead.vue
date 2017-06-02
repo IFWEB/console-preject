@@ -1,0 +1,37 @@
+<template>
+    <div>
+        <div class="page-head" v-html="pTitle"></div>
+        <hr>
+    </div>
+</template>
+<script>
+import {
+    mapGetters,
+    mapActions
+} from 'vuex';
+export default {
+    props: ['pTitle'],
+    data: function() {
+        return {
+            // 'pTitle': null
+        }
+    },
+
+    computed: mapGetters({
+        menu: 'menuitems'
+    }),
+
+    watch: {
+        '$route': function(from, to) {
+            // console.log(from, to)
+                // console.log(this.menu)
+        }
+    }
+}
+</script>
+<style>
+.page-head {
+    padding: 10px 10px 0 15px;
+    ;
+}
+</style>

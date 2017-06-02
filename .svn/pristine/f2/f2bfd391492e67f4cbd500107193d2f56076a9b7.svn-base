@@ -1,0 +1,27 @@
+var map = {
+    // 存放类似的模块引用,
+    // default:function(){require('./default/main.vue')},
+    // user_1:function(){require('./user/1.vue')},
+    // user_2:function(){require('./user/2.vue')},
+};
+
+// 注册每一个import函数，需要的时候再执行
+map['_'] = function() {
+    return import ('@/pages/index/default/main.vue');
+};
+map['_sysManage_jsgl_glygl'] = function() {
+    return import ('@/pages/index/sysManage/userControl/role.vue');
+};
+map['_sysManage_jsgl_yhzgl'] = function() {
+    return import ('@/pages/index/sysManage/userControl/tabtest.vue');
+};
+map['_busiManage_debitManage_lqbManage'] = function() {
+    return import ('@/pages/index/busiManage/debtControl/realDebt.vue');
+};
+map['_busiManage_debitManage_qyjdyxManage'] = function() {
+    return import ('@/pages/index/busiManage/debtControl/waitDebt.vue');
+};
+module.exports = function(name) {
+    var result = map[name] || null;
+    return result;
+};

@@ -1,0 +1,40 @@
+<style>
+.main-section {
+    color: green;
+}
+</style>
+<template>
+    <div class="container-section col-sm-9 col-md-10" id="containerSection">
+        <h1 class="page-header">default</h1>
+        <!-- <vodal :show="show" animation="rotate" @hide="show = false">
+            <div>A vue modal with animations.</div>
+        </vodal> -->
+        <div class="date-picker">
+            <label class="label-input">选择日期</label>
+            <input type="text" :value="date" readonly="readonly" />
+            <datepicker @change="change"></datepicker>
+        </div>
+    </div>
+</template>
+<script>
+import datepicker from '@/components/datepicker/date.vue'
+module.exports = {
+    data: function() {
+        return {
+            msg: '',
+            date:''
+        }
+    },
+    methods: {
+        show: function() {
+            return false;
+        },
+        change: function(date){
+            this.date = date
+        }
+    },
+    components: {
+        datepicker
+    }
+}
+</script>

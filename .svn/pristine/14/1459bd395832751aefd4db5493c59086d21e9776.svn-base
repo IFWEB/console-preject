@@ -1,0 +1,275 @@
+{
+    "code": 0,
+    "message": "success",
+    "data": [{
+        "path": "",
+        "title": "首页",
+        "children": [{
+            "path": "",
+            "title": "首页",
+            "url": {
+                "a": "a.htm"
+            }
+        }]
+    }, {
+        "path": "user",
+        "title": "用户管理",
+        "children": [{
+            "path": "userMan",
+            "title": "账号管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "useRole",
+                "title": "角色管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }, {
+            "path": "userRole",
+            "title": "角色管理",
+            "children": []
+        }]
+    }, {
+        "path": "business",
+        "title": "业务管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "advertise",
+        "title": "宣传管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "system",
+        "title": "系统管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "finance",
+        "title": "财务管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "statistics",
+        "title": "统计管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "promote",
+        "title": "推广管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }, {
+        "path": "baseInfo",
+        "title": "基础信息管理",
+        "children": [{
+            "path": "userMan",
+            "title": "业务管理",
+            "children": [{
+                "path": "",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "2",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "3",
+                "title": "账号管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }, {
+                "path": "4",
+                "title": "E账户管理",
+                "url": {
+                    "a": "a.htm"
+                }
+            }]
+        }]
+    }]
+}

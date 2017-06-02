@@ -1,0 +1,11 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "resources": [
+            "busiManage:acctManage:perInfo:check",
+            "busiManage:acctManage:eAccount:edit",
+            "busiManage:acctManage:account:select"
+        ]
+    }
+}

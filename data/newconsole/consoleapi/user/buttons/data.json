@@ -1,0 +1,20 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "resources": [
+            "statManage:yhtj:ptyhsjtj:select",
+            "statManage/yhtj/ptzxyhtj:select",
+            "sysManage:jsgl:glygl:select",
+            "statManage/yhtj/ptzxyhtj:edit",
+            "sysManage:jsgl:glygl:edit",
+            "statManage:yhtj:ptyhsjtj:edit",
+            "statManage/yhtj/ptzxyhtj:delete",
+            "sysManage:jsgl:glygl:delete",
+            "statManage:yhtj:ptyhsjtj:delete",
+            "statManage/yhtj/ptzxyhtj:add",
+            "sysManage:jsgl:glygl:add",
+            "statManage:yhtj:ptyhsjtj:add"
+        ]
+    }
+}

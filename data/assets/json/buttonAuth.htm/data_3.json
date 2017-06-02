@@ -1,0 +1,37 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "resources": [{
+            "label": "用户管理",
+            "path": "userManage"
+        }, {
+            "label": "业务管理",
+            "path": "busiManage",
+            "children": [{
+                "label": "账号管理",
+                "path": "acctManage",
+                "children": [{
+                    "label": "个人基本信息",
+                    "path": "perInfo"
+                }, {
+                    "label": "E账户管理",
+                    "path": "eAccount"
+                }]
+            }, {
+                "label": "借贷管理",
+                "path": "debitManage",
+                "children": [{
+                    "label": "零钱包管理",
+                    "path": "lqbManage"
+                }, {
+                    "label": "农优宝",
+                    "path": "nybManage"
+                }]
+            }, {
+                "label": "理财管理",
+                "path": "finanManage"
+            }]
+        }]
+    }
+}

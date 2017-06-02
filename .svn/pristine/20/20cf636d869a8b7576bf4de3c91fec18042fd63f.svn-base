@@ -1,0 +1,224 @@
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  font-family: 'Microsoft Yahei', 'Helvetica Neue', sans-serif;
+  color: #7a7676;
+  line-height: 20px;
+  overflow-x: hidden;
+  font-size: 14px;
+  padding-top: 50px;
+}
+hr{
+  margin: 10px 0;
+  border-color: #eee;
+}
+button{
+  overflow: none;
+}
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  padding-right: 20px;
+  margin-left: 250px;
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.navbar-brand{
+  height: 60px;
+  padding: 20px 15px;
+  font-size: 24px;
+}
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+.main .page-header {
+  margin-top: 0;
+}
+a {
+  color: #5e6069;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+input[type="text"]{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-input {
+    /*height: 24px;*/
+    line-height: 32px;
+    border: 1px solid #cad0db;
+    font-size: 13px;
+    padding: 0 5px;
+    margin: 0;
+    color: #5e6069;
+}
+.btn-primary {
+    background-color: #4778c7;
+    border-color: #5d91e5;
+    color: #FFF;
+}
+.btn-primary:hover {
+    background-color: #5d91e5;
+    border-color: #5d91e5;
+}
+.btn-mini {
+    padding: 5px 10px;
+}
+i{
+  font-style: normal;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+ul li {
+    line-height: 30px;
+    color: #837f7e;
+    list-style-type: none;
+}
+ul li i{
+  padding-right: 10px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.navbar-nav>li>a {
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 16px;
+}
+.side-bar-cont{
+  margin-top: 10px;
+}
+.container-section{
+    margin-left: 250px;
+    padding: 0 20px;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: 60px;
+    overflow: hidden!important;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    width: 250px;
+    font-size: 16px;
+    padding: 0 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #eff0f4;
+  }
+
+}
+@media (max-width: 768px) {
+  .navbar-fixed-top,.container-section {
+    margin-left: 0px;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+    background-color: #e2e3e4;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-trac
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #e2e3e4;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ddd;
+}

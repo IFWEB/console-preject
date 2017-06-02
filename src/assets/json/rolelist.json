@@ -1,0 +1,41 @@
+{
+    "list": [{
+        "id": 1,
+        "roleName": "超级管理员"
+    }, {
+        "id": 2,
+        "roleName": "系统管理员"
+    }, {
+        "id": 3,
+        "roleName": "业务操作员"
+    }, {
+        "id": 4,
+        "roleName": "投资经理"
+    }, {
+        "id": 5,
+        "roleName": "投资总监"
+    }, {
+        "id": 6,
+        "roleName": "投资发展部负责人"
+    }, {
+        "id": 7,
+        "roleName": "内审角色"
+    }, {
+        "id": 8,
+        "roleName": "审批角色"
+    }, {
+        "id": 9,
+        "roleName": "贷审会秘书角色"
+    }, {
+        "id": 10,
+        "roleName": "财务复核角色"
+    }],
+    "map": {},
+    "pageNo": 1,
+    "pageSize": 10,
+    "statusCode": "0",
+    "statusDesc": "操作成功",
+    "timestamp": 1494327025289,
+    "totalAmt": 0,
+    "totalCount": 22
+}

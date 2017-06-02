@@ -1,0 +1,37 @@
+<style>
+.main-section {
+    color: green;
+}
+</style>
+<template>
+    <div class="container-section col-sm-9 col-md-10" id="containerSection">
+        <page-head p-title="系统管理&nbsp;&nbsp;/&nbsp;&nbsp;角色管理"></page-head>
+        <table>
+            <tr v-for="(item,index) in items"><td></td></tr>
+        </table>
+    </div>
+</template>
+<script>
+import pageHead from '@/components/pageHead.vue';
+import datepicker from '@/components/datepicker/date.vue'
+module.exports = {
+    data: function() {
+        return {
+            msg: '',
+            items: []
+        }
+    },
+    methods: {
+        show: function() {
+            return false;
+        },
+        change: function(date) {
+            this.date = date
+        }
+    },
+    components: {
+        pageHead,
+        datepicker
+    }
+}
+</script>

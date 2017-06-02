@@ -1,0 +1,15 @@
+<template>
+	<div class="page-head" v-html="pTitle"></div>
+</template>
+
+<script>
+	export default {
+		props: ['pTitle']
+	}
+</script>
+
+<style>
+.page-head {
+    padding: 10px 10px 0 15px;;
+}
+</style>

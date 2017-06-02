@@ -1,0 +1,102 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "pageNum": 1,
+        "pageSize": 10,
+        "pages": 2,
+        "totalRecords": 15,
+        "data": [
+            {
+                "id": 1,
+                "roleName": "超级用户",
+                "roleIden": "ROLE_NOMAL7",
+                "status": "KY",
+                "remark": null,
+                "createDate": 1494212926000,
+                "updateDate": 1494212929000
+            },
+            {
+                "id": 2,
+                "roleName": "普通用户",
+                "roleIden": "ROLE_NOMAL",
+                "status": "KY",
+                "remark": null,
+                "createDate": 1494212941000,
+                "updateDate": 1494212945000
+            },
+            {
+                "id": 3,
+                "roleName": "test",
+                "roleIden": "ROLE_R0003",
+                "status": "KY",
+                "remark": "111",
+                "createDate": 1495086987000,
+                "updateDate": 1495086989000
+            },
+            {
+                "id": 4,
+                "roleName": "test4",
+                "roleIden": "ROLE_R0004",
+                "status": "KY",
+                "remark": "test",
+                "createDate": 1495087762000,
+                "updateDate": 1495105850000
+            },
+            {
+                "id": 10,
+                "roleName": "test1",
+                "roleIden": "ROLE_R8797",
+                "status": "JY",
+                "remark": "test1",
+                "createDate": 1495074387000,
+                "updateDate": 1495444054000
+            },
+            {
+                "id": 12,
+                "roleName": "test8",
+                "roleIden": "ROLE_R7831",
+                "status": "KY",
+                "remark": "test8",
+                "createDate": 1495074558000,
+                "updateDate": 1495074559000
+            },
+            {
+                "id": 13,
+                "roleName": "test7",
+                "roleIden": "ROLE_R1986",
+                "status": "KY",
+                "remark": "test7",
+                "createDate": 1495074710000,
+                "updateDate": 1495074710000
+            },
+            {
+                "id": 14,
+                "roleName": "test11",
+                "roleIden": "ROLE_R7637",
+                "status": "KY",
+                "remark": "test11",
+                "createDate": 1495074820000,
+                "updateDate": 1495074820000
+            },
+            {
+                "id": 15,
+                "roleName": "test12",
+                "roleIden": "ROLE_R8856",
+                "status": "KY",
+                "remark": "test12",
+                "createDate": 1495074892000,
+                "updateDate": 1495074892000
+            },
+            {
+                "id": 17,
+                "roleName": "test13",
+                "roleIden": "ROLE_R0643",
+                "status": "KY",
+                "remark": "test13",
+                "createDate": 1495076799000,
+                "updateDate": 1495076799000
+            }
+        ]
+    }
+}

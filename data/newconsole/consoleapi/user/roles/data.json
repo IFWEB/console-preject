@@ -1,0 +1,30 @@
+{
+    "code": 0,
+    "message": "操作成功",
+    "data": {
+        "pageNum": 1,
+        "pageSize": 10,
+        "pages": 1,
+        "totalRecords": 2,
+        "data": [
+            {
+                "id": 1,
+                "roleName": "超级用户",
+                "roleIden": "ROLE_NOMAL7",
+                "status": "KY",
+                "remark": "超级用户",
+                "createDate": 1494212926000,
+                "updateDate": 1495699013000
+            },
+            {
+                "id": 2,
+                "roleName": "普通用户",
+                "roleIden": "ROLE_NOMAL",
+                "status": "KY",
+                "remark": "普通用户",
+                "createDate": 1494212941000,
+                "updateDate": 1495789264000
+            }
+        ]
+    }
+}

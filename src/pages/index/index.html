@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>理财农场后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.options.cdn %>public/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div id="app">
+    <!-- 路由出口 -->
+    <!-- 路由匹配到的组件将渲染在这里 -->
+    <router-view :app-list='list'></router-view>
+</div>
+
+<script src="<%= htmlWebpackPlugin.options.cdn %>public/jquery.min.js"></script>
+<script src="<%= htmlWebpackPlugin.options.cdn %>public/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
